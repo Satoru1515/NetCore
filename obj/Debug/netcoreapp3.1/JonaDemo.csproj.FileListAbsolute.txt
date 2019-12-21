@@ -108,3 +108,4 @@ C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\bin\Debug\netcoreapp3.1\zh-Hant\M
 C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\JonaDemo.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\Razor\Pages\Account\Register.cshtml.g.cs
 C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\Razor\Pages\Account\Login.cshtml.g.cs
+C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout_Login.cshtml.g.cs

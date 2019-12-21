@@ -25,10 +25,14 @@ namespace JonaDemo.Pages
             _user_repository = userRepository;
         }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
             this._user = _user_repository.GetUserLogged();
-
+            if(this._user.Name == null)
+            {
+                return RedirectToPage("/Account/Login");
+            }
+            return Page();
         }
 
         

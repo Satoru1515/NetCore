@@ -17,6 +17,16 @@ namespace JonaDemo.Services
         {
             this.Users = new List<User>();
             this.userLogged = new User();
+
+            User userMaster = new User();
+
+            userMaster.Name = "Satoru";
+            userMaster.LastName = "Yano Romero";
+            userMaster.Email = "syano@gmail.com";
+            userMaster.Password ="123";
+
+            this.AddUser(userMaster);
+            userLogged = userMaster;
            
         }
 

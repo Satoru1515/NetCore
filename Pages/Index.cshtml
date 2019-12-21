@@ -2,13 +2,78 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    Layout = "_Layout";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    @if(Model._user.Name != "")
-    {
-        <h2>Hello @Model._user.Name</h2>
-    }
+    <h3>Hi @Model._user.Name! Welcome To Jona Books</h3>
+
+</div>
+
+
+<div class="row clearfix mb-5 card-deck">
+    <!-- Card -->
+    <div class="card booking-card col-sm-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+            <img class="card-img-top" src="~/images/book_2.jpg" alt="Card image cap">
+            <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title font-weight-bold"><a>Book's List</a></h4>
+
+        </div>
+
+    </div>
+    <!-- Card -->
+
+
+    <!-- Card -->
+    <div class="card booking-card col-sm-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+            <img class="card-img-top" src="~/images/book_1.jpg" alt="Card image cap">
+            <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title font-weight-bold"><a>Upload Books</a></h4>
+
+        </div>
+
+    </div>
+    <!-- Card -->
+
+
+    <!-- Card -->
+    <div class="card booking-card col-sm-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+            <img class="card-img-top" src="~/images/book_2.jpg" alt="Card image cap">
+            <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title font-weight-bold"><a>Book's List</a></h4>
+
+        </div>
+
+    </div>
+    <!-- Card -->
 </div>

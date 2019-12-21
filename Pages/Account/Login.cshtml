@@ -2,16 +2,17 @@
 @model JonaDemo.LoginModel
 @{
     ViewData["Title"] = "Login";
+    Layout = "_Layout_Login";
 }
  
   
 
 <div class="wrapper fadeInDown justify-content-center d-flex">
-    <div id="formContent" class="col-6 card">
+    <div id="formContent" class="col-md-4 col-sm-8 col-12 card_login pt-2">
         <!-- Tabs Titles -->
         <!-- Icon -->
         <div class="fadeIn first">
-            <h3 class="text-center">Sing Up</h3>
+            <h3 class="text-center">Sing In</h3>
         </div>
 
         @if(Model.error != null && Model.error != "")
