@@ -109,3 +109,7 @@ C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\JonaDemo.
 C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\Razor\Pages\Account\Register.cshtml.g.cs
 C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\Razor\Pages\Account\Login.cshtml.g.cs
 C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout_Login.cshtml.g.cs
+C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\Razor\Pages\Posts\Index.cshtml.g.cs
+C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\Razor\Pages\Posts\PostsForm.cshtml.g.cs
+C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\Razor\Pages\Authors\AuthorForm.cshtml.g.cs
+C:\Users\Lenovo\source\repos\JonaDemo\JonaDemo\obj\Debug\netcoreapp3.1\Razor\Pages\Authors\AuthorList.cshtml.g.cs

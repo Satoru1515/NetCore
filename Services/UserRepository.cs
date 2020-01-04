@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 namespace JonaDemo.Services
 {
-    public class DataRepository : IUserRepository
+    public class UserRepository : IUserRepository 
     {
-        public List<User> Users { get; set; }
+        private List<User> Users { get; set; }
 
         private User userLogged { get; set; }
 
+         
 
-        public DataRepository()
+
+        public UserRepository()
         {
             this.Users = new List<User>();
-            this.userLogged = new User();
+            this.userLogged = new User(); 
 
             User userMaster = new User();
 
@@ -64,11 +66,13 @@ namespace JonaDemo.Services
             throw new NotImplementedException();
         }
 
-        public User GetUser(string email, string passwod)
+        public User GetUser(string email, string password)
         {
-            var user = this.Users.FirstOrDefault(u => u.Email == email && u.Password == passwod);
+            var user = this.Users.FirstOrDefault(u => u.Email.ToLower() == email.ToLower() && u.Password.ToLower() == password.ToLower());
 
             return user;
         }
+
+       
     }
 }

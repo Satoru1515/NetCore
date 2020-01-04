@@ -1,0 +1,66 @@
+﻿@page
+@model JonaDemo.AuthorListModel
+@{
+    ViewData["Title"] = "AuthorList";
+}
+
+
+<div class="row card">
+    <div class="card-header pt-1">
+        <div class="row">
+            <div class="col-2"></div>
+
+            <div class="col-8 text-center">
+                <h2>Authors List</h2>
+            </div>
+
+            <div class="col-2 text-right">
+                <a class="btn btn-success" asp-page="/Authors/AuthorForm"><i class="fa fa-plus"></i> New Author</a>
+            </div>
+        </div>
+    </div>
+
+
+    @if (Model.authors.Count > 0)
+    {
+
+        foreach (var author in Model.authors)
+        {
+            <div class="card-body">
+
+                <div class="card-deck row">
+
+
+
+                    <div class="card booking-card col-md-4 col-sm-6">
+                        <!-- Card image -->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="@author.UrlProfileImage" alt="Card image cap" style="height:300px;">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body">
+                            <!-- Title -->
+                            <h4 class="card-title font-weight-bold text-center border-bottom mb-2"><a>@author.Name</a></h4>
+
+
+ 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        }
+    }
+    else
+    {
+        <div class="row pt-5 pb-5">
+            <div class="col-12 text-center">There are not registered authors!</div>
+        </div>
+    }
+
+
+</div>

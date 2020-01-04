@@ -1,0 +1,96 @@
+﻿@page
+@model JonaDemo.BooksFormModel
+@{
+    ViewData["Title"] = "BooksForm";
+}
+
+
+<div class="card">
+
+    <div class="card-header">
+        <div class="row">
+            <div class="col-2">
+                <a asp-page="/Books/Index" class="btn btn-light"><i class="fa fa-arrow-left"></i> Back</a>
+            </div>
+
+            <div class="col-8 text-center">
+                <h2>Books Form</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+
+            <div class="row clearfix">
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input class="form-control" asp-for="@Model.post.Name" />
+                        <span asp-validation-for="@Model.post.Name"></span>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="cover_book">Cover Book:</label>
+                        <input id="cover_book" class=" form-control input-post-cover" asp-for="@Model.post.CoverImage" />
+                        <span asp-validation-for="@Model.post.CoverImage"></span>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="book_file">Upload Book's File:</label>
+                        <input id="book_file" class="form-control input-post-cover" asp-for="@Model.post.UploadedFile" />
+                        <span asp-validation-for="@Model.post.UploadedFile"></span>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="authorBook">Author</label>
+                        <select id="authorBook" class="form-control" asp-for="@Model.post.AuthorId">
+                            <option value="">SELECT</option>
+
+                            @foreach (var author in Model.authors)
+                            {
+                                <option value="@author.Id"> @author.Name</option>
+                            }
+
+                        </select>
+                        <span asp-validation-for="@Model.post.AuthorId"></span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" class="form-control" asp-for="@Model.post.Description"></textarea>
+                        <span asp-validation-for="@Model.post.Description"></span>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="row clearfix mt-4">
+
+                <div class="col-12">
+                    <div class="form-group">
+                        <button class="btn btn-success btn-block">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+ 
